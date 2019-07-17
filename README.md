@@ -14,9 +14,12 @@ hpHosts - Ad and Tracking servers only
 
 https://hosts-file.net/ad_servers.txt
 
-MalwareDomainList.com Hosts List
+Malware Domain List
 
 https://www.malwaredomainlist.com/hostslist/hosts.txt
+
+Malware domains
+https://mirror.cedia.org.ec/malwaredomains/justdomains?_=11
 
 
 CoinBlockerLists
