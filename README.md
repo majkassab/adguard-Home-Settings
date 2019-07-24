@@ -1,6 +1,6 @@
 # adguard-Home-Settings
 
-# This is my favourite lists that i have used in Adguard Home  
+# This is my favourite lists that i'm using it in Adguard Home  
 
 AdGuard Simplified Domain Names filter
 
