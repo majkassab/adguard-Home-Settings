@@ -1,5 +1,6 @@
 # adguard-Home-Settings
 
+# This is my favourite lists that i have used in Adguard Home  
 
 AdGuard Simplified Domain Names filter
 
@@ -41,3 +42,15 @@ https://someonewhocares.org/hosts/hosts
 Peter Lowe’s Ad and tracking server list
 
 https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext
+
+Facebook Filter List by Mohamad Kassab
+
+https://raw.githubusercontent.com/majkassab/majkassab-block-lists/master/facebook.txt
+
+Anti popads.net
+
+https://raw.githubusercontent.com/Yhonay/antipopads/master/popads.txt
+
+Ransomware Tracker
+
+https://ransomwaretracker.abuse.ch/downloads/RW_DOMBL.txt
