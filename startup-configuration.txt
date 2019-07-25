@@ -1,1 +1,45 @@
+Auto startup app:
+Source: https://www.wikihow.com/Execute-a-Script-at-Startup-on-the-Raspberry-Pi
 
+Auto startup app on Mac:
+
+Source: https://stackoverflow.com/questions/6442364/running-script-upon-login-mac
+
+------------------
+use OSX's native process launcher and manager, launchd.
+
+To do so, make a launchctl daemon. You'll have full control over all aspects of the script. You can run once or keep alive as a daemon. In most cases, this is the way to go.
+
+Create a .plist file according to the instructions in the Apple Dev docs here or more detail below.
+Place in ~/Library/LaunchAgents
+Log in (or run manually via launchctl load [filename.plist])
+For more on launchd, the wikipedia article is quite good and describes the system and its advantages over other older systems.
+
+-------------------
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+   <key>Label</key>
+   <string>com.user.loginscript</string>
+   <key>ProgramArguments</key>
+   <array><string>/path/to/executable/script.sh</string></array>
+   <key>RunAtLoad</key>
+   <true/>
+</dict>
+</plist>
+
+--------------------
+
+Replace the <string> after the Program key with your desired command.
+
+Save as ~/Library/LaunchAgents/com.user.loginscript.plist
+
+Run launchctl load ~/Library/LaunchAgents/com.user.loginscript.plist and log out/in to test (or to test directly, run launchctl start com.user.loginscript)
+
+Tail /var/log/system.log for error messages.
+
+The key is that this is a User-specific launchd entry, so it will be run on login for the given user. System-specific launch daemons (placed in /Library/LaunchDaemons) are run on boot.
+
+If you want a script to run on login for all users, I believe LoginHook is your only option, and that's probably the reason it exists.
