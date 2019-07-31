@@ -15,6 +15,14 @@ hpHosts - Ad and Tracking servers only
 
 https://hosts-file.net/ad_servers.txt
 
+hpHosts - EMD / Malware
+
+https://hosts-file.net/emd.txt
+
+hpHosts - EXP / Exploit
+
+https://hosts-file.net/exp.txt
+
 Malware Domain List
 
 https://www.malwaredomainlist.com/hostslist/hosts.txt
