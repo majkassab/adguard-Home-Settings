@@ -1,5 +1,8 @@
 Auto startup app:
-Source: https://www.wikihow.com/Execute-a-Script-at-Startup-on-the-Raspberry-Pi
+Source: https://tutorial.cytron.io/2018/07/11/auto-run-raspberry-pi-script-cron/
+
+crontab -e
+@reboot sudo /home/xxxxx
 
 Auto startup app on Mac:
 
